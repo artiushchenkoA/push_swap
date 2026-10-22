@@ -15,7 +15,12 @@
 int	is_flag(char *str)
 {
 	if (str && str[0] == '-' && str[1] == '-' && str[2] != '\0')
-		return (1);
+	{
+		if (!ft_isdigit(str[2]))
+		{
+			return (1);
+		}
+	}
 	return (0);
 }
 

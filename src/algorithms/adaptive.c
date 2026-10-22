@@ -14,10 +14,13 @@
 
 void	sort_adaptive(t_grid *push_swap)
 {
+	if (push_swap->size_a <= 5)
+	{
+		tiny_sorting(push_swap);
+		return ;
+	}
 	if (push_swap->disorder < 0.2)
 		sort_simple(push_swap, push_swap->size_a);
-	else if (push_swap->disorder >= 0.2 && push_swap->disorder < 0.5)
-		sort_medium(push_swap);
 	else
-		quicksort_a(push_swap, push_swap->size_a, 0);
+		sort_medium(push_swap);
 }
