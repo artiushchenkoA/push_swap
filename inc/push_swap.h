@@ -62,14 +62,6 @@ typedef struct s_grid
 	t_bench		ops_count;
 }	t_grid;
 
-typedef struct s_quicksort
-{
-	int	pivot;
-	int	start_len;
-	int	rotated;
-	int	pushed;
-}	t_sort;
-
 /* OPERATIONS */
 void	sa(t_grid *push_swap);
 void	sb(t_grid *push_swap);
@@ -109,9 +101,6 @@ void	push_min_to_b(t_grid *push_swap, int stack_size);
 void	tiny_sorting(t_grid *push_swap);
 void	assign_index(t_node *stack);
 void	bubble_sort_array(int *arr, int len);
-void	decide_cases_a(t_grid *push_swap, int a, int b, int c);
-void	sort_top_three_a(t_grid *push_swap);
-void	sort_top_three_b(t_grid *push_swap);
 int		get_median(t_node *stack, int len);
 
 /* ALGORITHMS */
@@ -119,7 +108,6 @@ void	sort_simple(t_grid *push_swap, int stack_size);
 void	sort_medium(t_grid *push_swap);
 void	sort_adaptive(t_grid *push_swap);
 void	quicksort_a(t_grid *push_swap, int len, int count_rotations);
-void	quicksort_b(t_grid *push_swap, int len, int count_rotations);
 
 /* HELPER FUNCTIONS */
 long	ft_atol(const char *str);

@@ -21,15 +21,13 @@ SRCS = main.c \
 	lib/ft_putstr_fd.c \
 	lib/is_sorted.c \
 	lib/sort_array.c \
-	lib/sort_top_three.c \
 	lib/index.c \
 	lib/disorder.c \
 	lib/sorting.c \
 	src/algorithms/adaptive.c \
 	src/algorithms/bench.c \
 	src/algorithms/medium.c \
-	src/algorithms/quick_a.c \
-	src/algorithms/quick_b.c \
+	src/algorithms/quick.c \
 	src/algorithms/simple.c \
 	src/operations/push.c \
 	src/operations/reverse.c \
